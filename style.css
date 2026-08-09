@@ -141,8 +141,52 @@ html, body {
 }
 
 .element img {
-    /* display: none; */
+    display: none;
     height: 140%;
     z-index: 999;
     position: absolute;
+}
+
+/* ABOUT SECTION */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10vw 5vw;
+    padding-left: 46vw;
+    width: 100%;
+    background-color: black;
+}
+
+#about img {
+    padding: 2px;
+    width: 18vw;
+    border: 1.5px solid white;
+    border-radius: 100%;
+}
+
+#text-about {
+    width: 40rem;
+    color:white;
+}
+
+#text-about h5 {
+    text-transform: uppercase;
+    opacity: .8;
+    font-size: 1rem;
+}
+
+#text-about p {
+    line-height: 1.3;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+#text-about a {
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid white;
+    border-radius: 100px;
+    padding: 5px 8px;
 }
