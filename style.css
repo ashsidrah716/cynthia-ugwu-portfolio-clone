@@ -41,7 +41,7 @@ html, body {
 }
 
 #heading h1 {
-    opacity: .7;
+    opacity: .6;
     margin-left: 35px;
     line-height: 0.9;
     font-size: 8vw;
@@ -116,7 +116,7 @@ html, body {
     background-color: black;
     color: white;
     width: 100%;
-    height: 130vh;
+    height: 120vh;
 }
 
 .element {
@@ -189,4 +189,54 @@ html, body {
     border: 1.5px solid white;
     border-radius: 100px;
     padding: 5px 8px;
+}
+
+/* FOOTER */
+#footer {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+    padding-top: 4vw;
+    background-color: black;
+    width: 100%;
+    height: 40vh;
+}
+
+#subscribe {
+    font-size: 1vw;
+    padding-left: 20px;
+}
+
+#subscribe h5 {
+    opacity: .7;
+}
+
+#end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#footer-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 700;
 }
