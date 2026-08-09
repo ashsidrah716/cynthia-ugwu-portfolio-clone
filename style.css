@@ -14,6 +14,7 @@ html, body {
     width: 100%;
 }
 
+/* HERO SECTION */
 #hero {
     width: 100%;
     height: 100vh;
@@ -105,4 +106,43 @@ html, body {
 #hero-footer #icon-set {
     display: flex;
     gap: 3px;
+}
+
+/* MID SECTION */
+#mid-section {
+    padding-top: 150px;
+    padding-right: 12vw;
+    padding-left: 3vw;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 130vh;
+}
+
+.element {
+    position: relative;
+    width: 100%;
+    padding: 3vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    text-transform: uppercase;
+}
+
+.element h1 {
+    font-size: 6vw;
+    opacity: .6;
+    font-weight: 500;
+}
+
+.extra-border {
+    border-bottom: 1px solid grey;
+}
+
+.element img {
+    /* display: none; */
+    height: 140%;
+    z-index: 999;
+    position: absolute;
 }
