@@ -23,6 +23,7 @@ html, body {
     border-radius: 50%;
     z-index: 99999;
     transition: transform cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    pointer-events: none;
 }
 
 #main {
@@ -159,9 +160,10 @@ html, body {
 
 .element img {
     opacity: 0;
-    height: 140%;
+    height: 150%;
     z-index: 999;
     position: absolute;
+    pointer-events: none;
 }
 
 /* ABOUT SECTION */
