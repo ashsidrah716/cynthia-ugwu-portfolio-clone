@@ -4,7 +4,7 @@ function circleMouseFollower(x, y, xScale, yScale) {
     `translate(${x}px, ${y}px) scale(${xScale}, ${yScale})`;
 }
 
-// squeeze mouse during movement
+// SQUEEZE MOUSE DURING MOVEMENT
 let timer;
 
 function mouseMovementSqueeze() {
@@ -17,6 +17,10 @@ function mouseMovementSqueeze() {
 
   window.addEventListener("mousemove", function (details) {
     clearTimeout(timer);
+
+    gsap.to(document.querySelector("#mini-circle"), {
+      opacity: 1,
+    });
 
     let xDifference = Math.abs(details.clientX - xPrevious);
     let yDifference = Math.abs(details.clientY - yPrevious);
@@ -43,13 +47,21 @@ function mouseMovementSqueeze() {
   });
 }
 
-// image hover effect
+// IMAGE HOVER EFFCT
 document.querySelectorAll(".element").forEach(function (element) {
-  let img = element.querySelector("img");
+  const img = element.querySelector("img");
   let prevPosition = 0;
   let rotateDifference = 0;
   let rotation = 0;
   let timer2;
+
+  // ----------------------------------------------------------
+  // // h1 animation
+  // const heading = element.querySelector("h1");
+  // element.addEventListener("mouseover", function () {
+  //   heading.classList.toggle("element-animate");
+  // });
+  // ----------------------------------------------------------
 
   // image disappearing after mouse leaves
   element.addEventListener("mouseleave", function (e) {
@@ -92,5 +104,34 @@ document.querySelectorAll(".element").forEach(function (element) {
   });
 });
 
+// LANDING PAGE ANIMATIONS
+function landingPageAnimations() {
+  const time = gsap.timeline();
+
+  time.from("#nav", {
+    opacity: 0,
+    y: -10,
+    duration: 1.3,
+    ease: "expo.easeInOut",
+  });
+
+  time.to(".lp-animation", {
+    y: 0,
+    ease: "none",
+    duration: 1,
+    stagger: 0.3,
+    delay: -0.5,
+  });
+
+  time.from("#hero-footer", {
+    opacity: 0,
+    y: 10,
+    duration: 1,
+    ease: "expo.easeInOut",
+    delay: -0.3,
+  });
+}
+
 // Function calls
 mouseMovementSqueeze();
+landingPageAnimations();
