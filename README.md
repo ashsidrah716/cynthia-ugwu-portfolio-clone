@@ -1,19 +1,24 @@
 # Cynthia Ugwu Portfolio Clone
 
-A recreation of Cynthia Ugwu's portfolio website built as a frontend learning project while following a Sheryians Coding School tutorial.
+A recreation of **Cynthia Ugwu's portfolio website** built as a frontend learning project while following a Sheryians Coding School tutorial.
 
 ## About
 
-This project was created to practice building a modern, interactive portfolio website from scratch. While following the tutorial, I also experimented with the styling and made some personal changes to better understand the layout, animations, and interactions.
+This project started as a guided frontend exercise and gradually became an opportunity to experiment with layouts, animations, interactions, and responsive styling.
+
+While following the tutorial, I implemented the overall structure and design while also making personal adjustments and adding interactive effects to better understand how the different parts of the website work together.
 
 ## Features
 
 - Responsive portfolio layout
 - Custom typography and styling
-- Smooth scrolling
-- Interactive animations
-- Hover effects
-- Animated page elements
+- Smooth scrolling and animated transitions
+- Interactive landing page animations
+- Cursor-following and responsive mouse effects
+- Project image hover interactions
+- Text hover effects
+- GSAP-powered animations
+- Responsive positioning and layout
 
 ## Technologies Used
 
@@ -21,29 +26,39 @@ This project was created to practice building a modern, interactive portfolio we
 - CSS3
 - JavaScript
 - GSAP
-- Locomotive Scroll
 
 ## What I Learned
 
 - Structuring complex webpage layouts
-- Advanced CSS positioning and styling
-- Responsive design
-- CSS animations and transitions
-- JavaScript interactions
+- Working with CSS positioning and responsive units
+- Creating responsive layouts
+- Using CSS transitions and animations
+- Manipulating elements with JavaScript
+- Handling mouse events and interactive effects
 - Creating animations with GSAP
-- Implementing smooth scrolling effects
+- Debugging interactions involving positioning, transforms, and pointer events
 
 ## Preview
 
-> Screenshots will be added once the project is complete.
+### Landing Page
+
+![Landing Page](landing-page.png)
+
+### Projects Section
+
+![Projects Section](projects-section.png)
+
+### About Section
+
+![About Section](about-section.png)
 
 ## Credits
 
 This project was built as a learning exercise while following the **Cynthia Ugwu Portfolio Clone** tutorial by **Sheryians Coding School**.
 
-The original portfolio design belongs to **Cynthia Ugwu**.
+The original portfolio design and concept belong to **Cynthia Ugwu**.
 
-I also made small personal changes to the styling and design while following the tutorial.
+The implementation includes personal changes to the styling, layout, animations, and interactive behavior made while experimenting and learning throughout the project.
 
 ## Disclaimer
 
